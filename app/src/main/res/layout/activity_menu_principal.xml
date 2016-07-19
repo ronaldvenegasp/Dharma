@@ -64,6 +64,7 @@
         android:src="@drawable/menu_principal"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/textView9" />
 
     <ImageView
@@ -73,5 +74,40 @@
         android:src="@drawable/boton_ayuda"
         android:layout_alignBottom="@+id/boton_cambiar_mesa"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pedir_plato"
+        android:src="@drawable/pedir_plato"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/entretenimiento"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignEnd="@+id/pedir_plato" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/pagar"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/pqrs"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toStartOf="@+id/boton_ayuda"
+        android:layout_marginBottom="10dp" />
 
 </RelativeLayout>
