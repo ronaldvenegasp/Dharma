@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Aplicaciones_Android\Dharma\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\Aplicaciones_Android\Dharma\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_c400cef33e1a69231dc7e2bffd4914450f1ac0a4.jar" />
+    </item>
+    <item
+        jar="D:\Aplicaciones_Android\Dharma\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="a80fead08d7918a86b1ec45e4cdc24f482d8edb1">
+        <dex dex="D:\Aplicaciones_Android\Dharma\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_30aa1af226cafb8eed6aaff36e61267c6aec1ae7.jar" />
+    </item>
+    <item
+        jar="D:\Aplicaciones_Android\Dharma\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\Aplicaciones_Android\Dharma\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_f9f52028ff6014d040960ebeaf8cb404a5025309.jar" />
+    </item>
+
+</items>
