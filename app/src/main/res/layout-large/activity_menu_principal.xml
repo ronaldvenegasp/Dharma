@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="MENÚ PRINCIPAL"
         android:textAlignment="center"
-        android:textSize="45dp"
+        android:textSize="40dp"
         android:id="@+id/título"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
@@ -62,9 +62,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView3"
         android:src="@drawable/menu_principal"
-        android:layout_below="@+id/título"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/textView8" />
+        android:layout_toEndOf="@+id/textView9" />
 
     <ImageView
         android:layout_width="wrap_content"
