@@ -13,17 +13,27 @@ public class NumeroMesa extends AppCompatActivity {
     //Variables
     private EditText numeroDeMesa;
     private String numeroDeMesaIngresado;
+    private int numeroDeMesaEntero;
 
     public void setTableNumber(View view) {
         numeroDeMesa = (EditText) findViewById(R.id.numeroMesa);
         numeroDeMesaIngresado = numeroDeMesa.getText().toString();
         Log.i("Número de mesa: ", numeroDeMesaIngresado);
 
+        numeroDeMesaEntero = Integer.parseInt(numeroDeMesaIngresado);
+
         //Se declara el Intent y se instancia con el contexto y la clase a la que nos queremos dirigir
         Intent intent_numero_mesa = new Intent(NumeroMesa.this, MenuPrincipal.class);
 
         if(numeroDeMesaIngresado.equals("")) {
             Toast.makeText(getApplicationContext(), "¡Debes ingresar un número de mesa!", Toast.LENGTH_LONG).show();
+        }
+        if(numeroDeMesaEntero < 1){
+            Toast.makeText(getApplicationContext(), "¡Número de mesa incorrecto!", Toast.LENGTH_LONG).show();
+        }
+        if(numeroDeMesaEntero > 20){
+            Toast.makeText(getApplicationContext(), "¡Número de mesa incorrecto!", Toast.LENGTH_LONG).show();
+            numeroDeMesa.setText("");
         }
         else{
             //Al tocar sobre el botón de Siguiente, se pasa a la actividad Menú Principal de la aplicación
