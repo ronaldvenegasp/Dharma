@@ -44,6 +44,7 @@ public class NumeroMesa extends AppCompatActivity {
                 }
             });
 
+            //Enviar el número de la mesa a la siguiente actividad
             intent_numero_mesa.putExtra("mesa", numeroDeMesaIngresado);
             startActivity(intent_numero_mesa);
         }

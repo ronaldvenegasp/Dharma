@@ -80,22 +80,22 @@
         android:layout_height="wrap_content"
         android:id="@+id/pedir_plato"
         android:src="@drawable/pedir_plato"
-        android:layout_above="@+id/imageView4"
+        android:layout_above="@+id/entretenimiento"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="26dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
+        android:id="@+id/entretenimiento"
         android:src="@drawable/entretenimiento"
-        android:layout_above="@+id/imageView5"
+        android:layout_above="@+id/pagar"
         android:layout_alignEnd="@+id/pedir_plato" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
+        android:id="@+id/pagar"
         android:src="@drawable/pagar"
         android:layout_alignBottom="@+id/imageView3"
         android:layout_centerHorizontal="true"

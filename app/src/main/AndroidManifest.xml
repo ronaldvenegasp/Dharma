@@ -34,6 +34,10 @@
         <activity android:name=".Ayuda" />
         <activity android:name=".NumeroMesa" />
         <activity android:name=".MenuPrincipal" />
+        <activity android:name=".HacerPedido" />
+        <activity android:name=".Entretenimiento" />
+        <activity android:name=".Pagar" />
+        <activity android:name=".Pqrs"></activity>
     </application>
 
 </manifest>
