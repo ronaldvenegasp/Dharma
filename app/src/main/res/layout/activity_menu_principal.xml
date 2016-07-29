@@ -62,10 +62,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView3"
         android:src="@drawable/menu_principal"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pqrs"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/textView9" />
+        android:layout_below="@+id/textView9"
+        android:layout_toEndOf="@+id/entretenimiento" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -97,17 +97,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/pagar"
         android:src="@drawable/pagar"
-        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignBottom="@+id/pqrs"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="39dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView6"
+        android:id="@+id/pqrs"
         android:src="@drawable/pqrs"
-        android:layout_alignBottom="@+id/imageView3"
+        android:layout_above="@+id/boton_cambiar_mesa"
         android:layout_toStartOf="@+id/boton_ayuda"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="25dp" />
 
 </RelativeLayout>

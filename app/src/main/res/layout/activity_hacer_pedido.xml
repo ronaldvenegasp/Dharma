@@ -25,8 +25,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView4"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="46dp"
         android:src="@drawable/hacer_pedido"
         android:layout_below="@+id/textView10"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
