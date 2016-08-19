@@ -7,16 +7,37 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.personal.dharma.Ayuda">
+    tools:context="com.example.personal.dharma.Ayuda"
+    android:background="#FCCFA8">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView20"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#F8A955"
+        android:padding="25dp"
+        android:password="false"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="AYUDA"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="35dp"
         android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#F79730"
+        android:padding="25dp"
+        android:elegantTextHeight="false"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

@@ -107,7 +107,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignEnd="@+id/numeroMesa"
             android:background="#F79730"
-            android:layout_marginTop="-50dp" />
+            android:layout_marginTop="-50dp"
+            android:textColor="#ffffff" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -130,23 +131,24 @@
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#F8A955"
-        android:padding="25dp"
         android:layout_alignTop="@+id/transicion"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="10dp"
         android:password="false"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="¿EN QUÉ MESA \nSE ENCUENTRA?"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="35dp"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:background="#F79730" />
+        android:background="#F79730"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
