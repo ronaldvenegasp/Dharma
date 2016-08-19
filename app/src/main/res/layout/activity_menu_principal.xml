@@ -73,7 +73,8 @@
         android:id="@+id/boton_cambiar_mesa"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/imageView3"
-        android:background="#F79730" />
+        android:background="#F79730"
+        android:textColor="#FFFFFF" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -81,9 +82,9 @@
         android:id="@+id/imageView3"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/pedir_plato"
-        android:src="@drawable/menu_principal"
         android:layout_above="@+id/boton_ayuda"
-        android:layout_alignTop="@+id/pedir_plato" />
+        android:layout_alignTop="@+id/pedir_plato"
+        android:src="@drawable/menu_principal" />
 
     <ImageView
         android:layout_width="wrap_content"
