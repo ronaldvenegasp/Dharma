@@ -37,7 +37,9 @@
         <activity android:name=".HacerPedido" />
         <activity android:name=".Entretenimiento" />
         <activity android:name=".Pagar" />
-        <activity android:name=".Pqrs"></activity>
+        <activity android:name=".Pqrs" />
+        <activity android:name=".retos_ninos" />
+        <activity android:name=".retos_adultos"></activity>
     </application>
 
 </manifest>

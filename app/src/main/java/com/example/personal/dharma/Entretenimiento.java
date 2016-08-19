@@ -19,5 +19,29 @@ public class Entretenimiento extends AppCompatActivity {
                 startActivity(new Intent(Entretenimiento.this, Ayuda.class));
             }
         });
+
+        //Al tocar sobre la imagen de Retos para Niños, se pasa a la actividad retos_ninos de la aplicación
+        findViewById(R.id.retos_ninos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Entretenimiento.this, retos_ninos.class));
+            }
+        });
+
+        //Al tocar sobre la imagen de Retos para Adultos, se pasa a la actividad retos_adultos de la aplicación
+        findViewById(R.id.retos_adultos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Entretenimiento.this, retos_adultos.class));
+            }
+        });
+
+        //Al tocar sobre el botón de Menú Principal, se pasa a la actividad menu_principal de la aplicación
+        findViewById(R.id.menu_principal).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Entretenimiento.this, MenuPrincipal.class));
+            }
+        });
     }
 }

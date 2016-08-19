@@ -50,4 +50,56 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pantalla_entretenimiento"
+        android:layout_marginTop="-25dp"
+        android:layout_above="@+id/textView21" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView21"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FBCB73"
+        android:padding="33dp"
+        android:password="false"
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retos_ninos"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/retos_ninos"
+        android:layout_marginLeft="80dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retos_adultos"
+        android:src="@drawable/retos_adultos"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginRight="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal"
+        android:padding="0dp"
+        android:scaleType="center"
+        android:src="@drawable/boton_menu_principal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView21" />
+
 </RelativeLayout>
