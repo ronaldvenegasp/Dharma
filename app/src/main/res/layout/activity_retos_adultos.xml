@@ -49,4 +49,96 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal"
+        android:padding="0dp"
+        android:scaleType="center"
+        android:src="@drawable/boton_menu_principal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/textView23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/pantalla_retos_adultos"
+        android:layout_above="@+id/textView29" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView29"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FBCB73"
+        android:padding="33dp"
+        android:password="false"
+        android:layout_above="@+id/menu_principal"
+        android:layout_alignEnd="@+id/menu_principal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sopa_letras"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/sopa_de_letras" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adivinanzas"
+        android:src="@drawable/adivinanzas"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cultura_hindu"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/taj_mahal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sopa de letras"
+        android:id="@+id/textView30"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/sopa_letras"
+        android:layout_alignEnd="@+id/sopa_letras"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cultura Hindú"
+        android:id="@+id/textView31"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignEnd="@+id/cultura_hindu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Adivinanzas"
+        android:id="@+id/textView32"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignEnd="@+id/menu_principal" />
+
 </RelativeLayout>

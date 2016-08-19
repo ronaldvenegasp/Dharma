@@ -48,4 +48,80 @@
         android:src="@drawable/boton_ayuda"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView25"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/pantalla_retos_ninos"
+        android:layout_above="@+id/textView26" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView26"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FBCB73"
+        android:padding="33dp"
+        android:password="false"
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal"
+        android:padding="0dp"
+        android:scaleType="center"
+        android:src="@drawable/boton_menu_principal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cultura_hindu"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cultura_hindu"
+        android:layout_marginLeft="70dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reto"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignEnd="@+id/imageView6"
+        android:src="@drawable/retos"
+        android:layout_marginRight="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cultura Hindú"
+        android:id="@+id/textView27"
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_alignEnd="@+id/cultura_hindu"
+        android:layout_toEndOf="@+id/boton_ayuda"
+        android:textStyle="italic"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reto"
+        android:id="@+id/textView28"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/reto"
+        android:layout_alignStart="@+id/reto"
+        android:layout_alignEnd="@+id/reto" />
 </RelativeLayout>
