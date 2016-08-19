@@ -10,34 +10,6 @@
     tools:context="com.example.personal.dharma.NumeroMesa"
     android:background="#FCCFA8">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:id="@+id/textView11"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:background="#F8A955"
-        android:padding="25dp"
-        android:layout_alignTop="@+id/transicion"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp"
-        android:password="false"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="¿EN QUÉ MESA \nSE ENCUENTRA?"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:background="#F79730" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -72,7 +44,7 @@
             android:textSize="17dp"
             android:layout_below="@+id/imageView2"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="25dp" />
+            android:layout_marginTop="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +70,7 @@
             android:layout_alignTop="@+id/textView6"
             android:layout_alignParentStart="true"
             android:layout_gravity="right"
-            android:layout_marginTop="-45dp" />
+            android:layout_marginTop="-50dp" />
 
         <EditText
             android:layout_width="170dp"
@@ -148,5 +120,33 @@
 
     </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#F8A955"
+        android:padding="25dp"
+        android:layout_alignTop="@+id/transicion"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:password="false"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="¿EN QUÉ MESA \nSE ENCUENTRA?"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="#F79730" />
 
 </RelativeLayout>

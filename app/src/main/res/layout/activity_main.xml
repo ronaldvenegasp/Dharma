@@ -38,7 +38,8 @@
         android:background="#F79730"
         android:padding="25dp"
         android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false" />
+        android:layout_alignParentStart="false"
+        android:elegantTextHeight="false" />
 
     <ImageView
         android:layout_width="wrap_content"
