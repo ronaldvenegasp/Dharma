@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -53,6 +54,7 @@ public class NumeroMesa extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_numero_mesa);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
