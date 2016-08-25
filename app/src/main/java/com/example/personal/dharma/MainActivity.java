@@ -18,12 +18,10 @@ public class MainActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
+        //Establece el tipo de letra del título de la pantalla
         tituloPantalla = (TextView) findViewById(R.id.titulo);
-
-        String font_path = "font/Century725_Cn _BT.ttf";
-
+        String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
-
         tituloPantalla.setTypeface(TF);
 
 

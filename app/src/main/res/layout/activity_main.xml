@@ -15,12 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="40dp"
         android:id="@+id/textView"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#F8A955"
-        android:padding="25dp"
+        android:padding="45dp"
         android:layout_alignTop="@+id/transicion"
         android:layout_alignParentStart="true"
         android:layout_marginTop="0dp"
@@ -29,27 +28,27 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BIENVENIDO"
         android:textAlignment="center"
-        android:textSize="25dp"
         android:id="@+id/titulo"
-        android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#F79730"
         android:padding="25dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
-        android:elegantTextHeight="false" />
+        android:elegantTextHeight="false"
+        android:textStyle="bold"
+        android:text="BIENVENIDO"
+        android:textSize="40dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/titulo"
         android:src="@drawable/pantalla_inicial"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentTop="false" />
+        android:contentDescription="imagen de inicio"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -59,7 +58,69 @@
         android:layout_alignParentStart="true"
         android:padding="0dp"
         android:scaleType="center"
-        android:src="@drawable/boton_ayuda" />
+        android:src="@drawable/boton_ayuda"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FBCB73"
+        android:password="false"
+        android:padding="25dp"
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:src="@drawable/flecha1"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:src="@drawable/flecha2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/flecha3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView9"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/flecha4"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView10"
+        android:layout_alignBottom="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/flecha5"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/imageView11"
+        android:layout_alignBottom="@+id/textView2" />
 
     <ImageView
         android:layout_width="fill_parent"

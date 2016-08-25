@@ -1,15 +1,19 @@
 package com.example.personal.dharma;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class NumeroMesa extends AppCompatActivity {
+
+    TextView tituloPantalla;
 
     //Variables
     private EditText numeroDeMesa;
@@ -56,6 +60,12 @@ public class NumeroMesa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_numero_mesa);
+
+        //Establece el tipo de letra del título de la pantalla
+        tituloPantalla = (TextView) findViewById(R.id.titulo);
+        String font_path = "font/Humanst521_BT.ttf";
+        Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
+        tituloPantalla.setTypeface(TF);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {
