@@ -3,39 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
     tools:context="com.example.personal.dharma.Entretenimiento"
     android:background="#FCCFA8">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/ENTRETENIMIENTO"
         android:textAlignment="center"
-        android:textSize="40dp"
-        android:id="@+id/textView15"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:background="#F8A955"
-        android:padding="25dp"
-        android:password="false"
-        android:layout_alignTop="@+id/textView14"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="0dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ENTRETENIMIENTO"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:id="@+id/textView14"
+        android:textSize="@dimen/titles_size_standard_2"
+        android:id="@+id/titulo"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#F79730"
-        android:padding="25dp"
+        android:padding="30sp"
+        android:elevation="10dp"
         android:elegantTextHeight="false"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -44,8 +30,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/boton_ayuda"
-        android:padding="0dp"
+        android:padding="0sp"
         android:scaleType="center"
+        android:contentDescription="@string/boton_ayuda"
         android:src="@drawable/boton_ayuda"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
@@ -54,22 +41,23 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView5"
-        android:layout_below="@+id/textView15"
+        android:layout_below="@+id/titulo"
         android:layout_centerHorizontal="true"
         android:src="@drawable/pantalla_entretenimiento"
-        android:layout_marginTop="-25dp"
+        android:contentDescription="@string/entretenimiento"
+        android:layout_marginTop="-25sp"
         android:layout_above="@+id/textView21" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:id="@+id/textView21"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#FBCB73"
-        android:padding="33dp"
+        android:padding="33sp"
         android:password="false"
         android:layout_above="@+id/boton_ayuda"
         android:layout_centerHorizontal="true" />
@@ -81,7 +69,8 @@
         android:layout_alignTop="@+id/textView21"
         android:layout_alignParentStart="true"
         android:src="@drawable/retos_ninos"
-        android:layout_marginLeft="80dp" />
+        android:contentDescription="@string/imagen_retos_niños"
+        android:layout_marginStart="80sp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -90,15 +79,17 @@
         android:src="@drawable/retos_adultos"
         android:layout_alignTop="@+id/textView21"
         android:layout_alignEnd="@+id/imageView5"
-        android:layout_marginRight="50dp" />
+        android:contentDescription="@string/imagen_retos_adultos"
+        android:layout_marginEnd="50sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/menu_principal"
-        android:padding="0dp"
+        android:padding="0sp"
         android:scaleType="center"
         android:src="@drawable/boton_menu_principal"
+        android:contentDescription="@string/menu_principal"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/textView21" />
 

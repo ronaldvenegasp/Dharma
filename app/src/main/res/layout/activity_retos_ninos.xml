@@ -3,39 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
     tools:context="com.example.personal.dharma.retos_ninos"
     android:background="#FCCFA8">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/RETOS_ADULTOS"
         android:textAlignment="center"
-        android:textSize="35dp"
-        android:id="@+id/textView25"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:background="#F8A955"
-        android:padding="32dp"
-        android:elegantTextHeight="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-20dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RETOS PARA \nNIÑOS"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:id="@+id/textView24"
+        android:textSize="@dimen/titles_size_standard"
+        android:id="@+id/titulo"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#F79730"
-        android:padding="5dp"
+        android:padding="25sp"
+        android:elevation="10dp"
         android:elegantTextHeight="false"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -44,9 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/boton_ayuda"
-        android:padding="0dp"
+        android:padding="0sp"
         android:scaleType="center"
         android:src="@drawable/boton_ayuda"
+        android:contentDescription="@string/boton_ayuda"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
@@ -54,9 +41,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView6"
-        android:layout_below="@+id/textView25"
+        android:layout_below="@+id/titulo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-25dp"
+        android:layout_marginTop="-25sp"
+        android:contentDescription="@string/imagen_retos_adultos"
         android:src="@drawable/pantalla_retos_ninos"
         android:layout_above="@+id/textView26" />
 
@@ -64,12 +52,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:id="@+id/textView26"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#FBCB73"
-        android:padding="33dp"
+        android:padding="33sp"
         android:password="false"
         android:layout_above="@+id/boton_ayuda"
         android:layout_centerHorizontal="true" />
@@ -78,8 +66,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/menu_principal"
-        android:padding="0dp"
+        android:padding="0sp"
         android:scaleType="center"
+        android:contentDescription="@string/boton_home"
         android:src="@drawable/boton_menu_principal"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
@@ -90,23 +79,25 @@
         android:id="@+id/cultura_hindu"
         android:layout_alignTop="@+id/textView26"
         android:layout_alignParentStart="true"
+        android:contentDescription="@string/imagen_cultura_hindu"
         android:src="@drawable/cultura_hindu"
-        android:layout_marginLeft="70dp" />
+        android:layout_marginStart="70sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reto"
+        android:contentDescription="@string/imagen_retos"
         android:layout_alignTop="@+id/textView26"
         android:layout_alignEnd="@+id/imageView6"
         android:src="@drawable/retos"
-        android:layout_marginRight="50dp" />
+        android:layout_marginEnd="50sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Cultura Hindú"
+        android:text="@string/cultura_hindu"
         android:id="@+id/textView27"
         android:layout_above="@+id/boton_ayuda"
         android:layout_alignEnd="@+id/cultura_hindu"
@@ -118,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Reto"
+        android:text="@string/Reto"
         android:id="@+id/textView28"
         android:textStyle="italic"
         android:textAlignment="center"

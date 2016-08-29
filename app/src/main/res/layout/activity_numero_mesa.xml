@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
     tools:context="com.example.personal.dharma.NumeroMesa"
     android:background="#FCCFA8">
 
@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/titulo"
@@ -30,8 +30,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
             android:layout_below="@+id/titulo"
+            android:contentDescription="@string/imagen_mesa"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="15sp"
             android:layout_alignParentStart="true"
             android:src="@drawable/mensaje_mesa" />
 
@@ -39,30 +40,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Digite el número de la\n mesa"
+            android:text="@string/digite_numero_mesa"
             android:id="@+id/textView6"
             android:textAlignment="center"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_below="@+id/imageView2"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginStart="10sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Escanee el número de\nla mesa"
+            android:text="@string/escanee_numero_mesa"
             android:id="@+id/textView5"
             android:textAlignment="center"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_alignTop="@+id/textView6"
             android:layout_alignParentStart="true"
-            android:layout_gravity="right"
-            android:layout_marginTop="-40dp"
-            android:layout_marginRight="10dp" />
+            android:layout_gravity="end"
+            android:layout_marginTop="-40sp"
+            android:layout_marginEnd="10sp" />
 
         <EditText
-            android:layout_width="180dp"
+            android:layout_width="180sp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
@@ -71,20 +72,20 @@
             android:layout_below="@+id/textView5"
             android:layout_alignParentStart="true"
             android:layout_alignEnd="@+id/textView5"
-            android:layout_marginTop="0dp" />
+            android:layout_marginTop="0sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="ó"
+            android:text="@string/o"
             android:id="@+id/textView7"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_alignTop="@+id/textView5"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="-60dp" />
+            android:layout_marginTop="-60sp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -94,65 +95,53 @@
             android:layout_toStartOf="@+id/boton_ayuda"
             android:background="#FCCFA8"
             android:src="@drawable/cam"
-            android:layout_gravity="right"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="50dp" />
+            android:layout_gravity="end"
+            android:contentDescription="@string/boton_camara"
+            android:layout_marginEnd="60sp"
+            android:layout_marginTop="50sp" />
 
         <Button
-            android:layout_width="160dp"
+            android:layout_width="160sp"
             android:layout_height="wrap_content"
-            android:text="Siguiente"
+            android:text="@string/Siguiente"
             android:id="@+id/mesa_boton_siguiente"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:onClick="setTableNumber"
             android:layout_below="@+id/numeroMesa"
             android:layout_alignParentStart="true"
             android:layout_alignEnd="@+id/numeroMesa"
             android:background="#F79730"
             android:textColor="#ffffff"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="-50dp" />
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="-50sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/boton_ayuda"
             android:src="@drawable/boton_ayuda"
+            android:contentDescription="@string/boton_ayuda"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20sp" />
 
     </LinearLayout>
     </ScrollView>
 
     <TextView
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/mesa"
         android:textAlignment="center"
-        android:textSize="40sp"
-        android:id="@+id/textView11"
+        android:textSize="@dimen/titles_size_standard_2"
+        android:id="@+id/titulo"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:background="#F8A955"
-        android:layout_alignTop="@+id/transicion"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="0dp"
-        android:password="false"
-        android:layout_gravity="center_horizontal"
-        android:padding="45dp" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="¿EN QUÉ MESA \nSE ENCUENTRA?"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        android:id="@+id/titulo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:background="#F79730"
-        android:textColor="#ffffff"
-        android:padding="25dp" />
+        android:padding="15sp"
+        android:elevation="10dp"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

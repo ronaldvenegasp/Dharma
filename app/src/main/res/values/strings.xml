@@ -91,4 +91,42 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="BIENVENIDO">BIENVENIDO</string>
+    <string name="CALIFIQUENOS">CALIFIQUENOS</string>
+    <string name="AYUDA">AYUDA</string>
+    <string name="PAGAR">PAGAR</string>
+    <string name="HACER_PEDIDO">HACER PEDIDO</string>
+    <string name="boton_ayuda">boton_de_ayuda</string>
+    <string name="hacer_pedido">imagen_de_hacer_pedido</string>
+    <string name="Recomendados_listos">Recomendados y\nlistos</string>
+    <string name="Combinarlo">Combinarlo como\nquiero</string>
+    <string name="RETOS_ADULTOS">RETOS ADULTOS</string>
+    <string name="imagen_retos_adultos">Imagen de pantalla retos adultos</string>
+    <string name="imagen_cultura_hindu">Botón retos cultura hindú</string>
+    <string name="imagen_retos">Botón de retos adultos</string>
+    <string name="boton_home">Botón para ir la menú principal</string>
+    <string name="cultura_hindu">Cultura Hindú</string>
+    <string name="Reto">Reto</string>
+    <string name="menu_principal">¿QUÉ LE GUSTARÍA HACER?</string>
+    <string name="mesa_no"> Mesa No. </string>
+    <string name="esta_mesa">Esta en la </string>
+    <string name="boton_numero_mesa">Cambiar número\nde mesa</string>
+    <string name="pedir_plato">pedir plato</string>
+    <string name="entretenimiento">entretenimiento</string>
+    <string name="pagar">boton_pagar</string>
+    <string name="pqrs">califiquenos</string>
+    <string name="ENTRETENIMIENTO">ENTRETENIMIENTO</string>
+    <string name="inicio">Imagen de inicio</string>
+    <string name="flecha">flecha</string>
+    <string name="transicion">transición</string>
+    <string name="sopa_letras">Sopa de letras</string>
+    <string name="Adivinanzas">Adivinanzas</string>
+    <string name="imagen_retos_niños">retos niños</string>
+    <string name="mesa">¿EN QUÉ MESA SE ENCUENTRA?</string>
+    <string name="Siguiente">botón siguiente</string>
+    <string name="boton_camara">botón cámara</string>
+    <string name="o">ó</string>
+    <string name="imagen_mesa">Imagen Mesa</string>
+    <string name="digite_numero_mesa">Digite el número de la\n mesa</string>
+    <string name="escanee_numero_mesa">Escanee el número de\nla mesa</string>
 </resources>
