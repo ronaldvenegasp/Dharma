@@ -14,6 +14,8 @@ import android.widget.Toast;
 public class NumeroMesa extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView digitarNumero;
+    TextView escanearNumero;
 
     //Variables
     private EditText numeroDeMesa;
@@ -66,6 +68,18 @@ public class NumeroMesa extends AppCompatActivity {
         String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
+
+        //Establece el tipo de letra del campo digitar número de mesa
+        digitarNumero = (TextView) findViewById(R.id.digitar_numero);
+        String font_path1 = "font/Keira_Normal.ttf";
+        Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
+        digitarNumero.setTypeface(TF1);
+
+        //Establece el tipo de letra del campo escanear número de mesa
+        escanearNumero = (TextView) findViewById(R.id.escanear_numero);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        escanearNumero.setTypeface(TF2);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {

@@ -13,6 +13,8 @@ import android.widget.TextView;
 public class MenuPrincipal extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView numeroMesa;
+    TextView numeroMesa1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,18 @@ public class MenuPrincipal extends AppCompatActivity {
         String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
+
+        //Establece el tipo de letra del mensaje de número de mesa
+        numeroMesa = (TextView) findViewById(R.id.numero_mesa);
+        String font_path1 = "font/Keira_Normal.ttf";
+        Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
+        numeroMesa.setTypeface(TF1);
+
+        //Establece el tipo de letra del mensaje de número de mesa
+        numeroMesa1 = (TextView) findViewById(R.id.numeroDeLaMesa);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        numeroMesa1.setTypeface(TF2);
 
         TextView numberTable = (TextView) findViewById(R.id.numeroDeLaMesa);
 
