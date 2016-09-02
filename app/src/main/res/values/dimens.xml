@@ -3,6 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="titles_size_standard">40sp</dimen> //Estándar para el tamaño del texto de los títulos de la app
-    <dimen name="titles_size_standard_2">30sp</dimen> //Estándar para el tamaño del texto de los títulos de la app
+    <dimen name="titles_size_standard">40sp</dimen>
+    //Estándar para el tamaño del texto de los títulos de la app
+    <dimen name="titles_size_standard_2">30sp</dimen>
+    //Estándar para el tamaño del texto de los títulos de la app
 </resources>

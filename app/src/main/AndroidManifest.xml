@@ -25,7 +25,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,7 +39,8 @@
         <activity android:name=".Pagar" />
         <activity android:name=".Pqrs" />
         <activity android:name=".retos_ninos" />
-        <activity android:name=".retos_adultos"></activity>
+        <activity android:name=".retos_adultos" />
+        <activity android:name=".inicio"></activity>
     </application>
 
 </manifest>
