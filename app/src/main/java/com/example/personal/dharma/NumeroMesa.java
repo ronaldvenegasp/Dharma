@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,9 +20,9 @@ public class NumeroMesa extends AppCompatActivity {
     TextView escanearNumero;
 
     //Variables
-    private EditText numeroDeMesa;
-    private String numeroDeMesaIngresado;
-    private int numeroDeMesaEntero;
+    //private EditText numeroDeMesa;
+    private String numeroDeMesaIngresado = "-----";
+    //private int numeroDeMesaEntero;
 
     Spinner lista;
     String[] numerosMesas = {"-----", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",};
@@ -34,20 +33,13 @@ public class NumeroMesa extends AppCompatActivity {
          //numeroDeMesaIngresado = numeroDeMesa.getText().toString();
          Log.i("Número de mesa: ", numeroDeMesaIngresado);
 
-        numeroDeMesaEntero = Integer.parseInt(numeroDeMesaIngresado);
+        //numeroDeMesaEntero = Integer.parseInt(numeroDeMesaIngresado);
 
         //Se declara el Intent y se instancia con el contexto y la clase a la que nos queremos dirigir
         Intent intent_numero_mesa = new Intent(NumeroMesa.this, MenuPrincipal.class);
 
-        if(numeroDeMesaIngresado.equals("")) {
-            Toast.makeText(getApplicationContext(), "¡Debes ingresar un número de mesa!", Toast.LENGTH_LONG).show();
-        }
-        if(numeroDeMesaEntero < 1){
-            Toast.makeText(getApplicationContext(), "¡Número de mesa incorrecto!", Toast.LENGTH_LONG).show();
-        }
-        if(numeroDeMesaEntero > 20){
-            Toast.makeText(getApplicationContext(), "¡Número de mesa incorrecto!", Toast.LENGTH_LONG).show();
-            numeroDeMesa.setText("");
+        if(numeroDeMesaIngresado.equals("-----")) {
+            Toast.makeText(getApplicationContext(), "¡Debe seleccionar un número de mesa!", Toast.LENGTH_LONG).show();
         }
         else{
             //Al tocar sobre el botón de Siguiente, se pasa a la actividad Menú Principal de la aplicación

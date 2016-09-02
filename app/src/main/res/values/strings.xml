@@ -101,6 +101,7 @@
     <string name="Recomendados_listos">Recomendados y\nlistos</string>
     <string name="Combinarlo">Combinarlo como\nquiero</string>
     <string name="RETOS_ADULTOS">RETOS ADULTOS</string>
+    <string name="RETOS_NIÑOS">RETOS NIÑOS</string>
     <string name="imagen_retos_adultos">Imagen de pantalla retos adultos</string>
     <string name="imagen_cultura_hindu">Botón retos cultura hindú</string>
     <string name="imagen_retos">Botón de retos adultos</string>
@@ -125,7 +126,6 @@
     <string name="mesa">¿EN QUÉ MESA SE ENCUENTRA?</string>
     <string name="Siguiente">Siguiente</string>
     <string name="boton_camara">botón cámara</string>
-    <string name="o">ó</string>
     <string name="imagen_mesa">Imagen Mesa</string>
     <string name="digite_numero_mesa">Escoja el número \nde la mesa</string>
     <string name="escanee_numero_mesa">Escanee el número \nde la mesa</string>

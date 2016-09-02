@@ -11,6 +11,8 @@ import android.widget.TextView;
 public class retos_ninos extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView culturaHindu;
+    TextView retos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,18 @@ public class retos_ninos extends AppCompatActivity {
         String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
+
+        //Establece el tipo de letra de Cultura Hindú
+        culturaHindu = (TextView) findViewById(R.id.cultura_hindu_text);
+        String font_path1 = "font/Keira_Normal.ttf";
+        Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
+        culturaHindu.setTypeface(TF1);
+
+        //Establece el tipo de letra de reto
+        retos = (TextView) findViewById(R.id.reto_text);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        retos.setTypeface(TF2);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {

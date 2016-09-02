@@ -47,7 +47,7 @@ public class MenuPrincipal extends AppCompatActivity {
         Bundle extras = intent.getExtras();
         if(extras != null){
             String datoMesa = (String) extras.get("mesa");
-            numberTable.setText(datoMesa);
+            numberTable.setText(" " + datoMesa);
         }
 
         //Al tocar sobre el botón de Hacer pedido, se pasa a la actividad HacerPedido de la aplicación

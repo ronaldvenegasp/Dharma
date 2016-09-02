@@ -11,6 +11,9 @@ import android.widget.TextView;
 public class retos_adultos extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView sopaDeLetras;
+    TextView culturaHinduText;
+    TextView adivinanzas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,24 @@ public class retos_adultos extends AppCompatActivity {
         String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
+
+        //Establece el tipo de letra de Sopa de Letras
+        sopaDeLetras = (TextView) findViewById(R.id.sopa_de_letras_text);
+        String font_path1 = "font/Keira_Normal.ttf";
+        Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
+        sopaDeLetras.setTypeface(TF1);
+
+        //Establece el tipo de letra de Cultura Hindú
+        culturaHinduText = (TextView) findViewById(R.id.cultura_hindu_text);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        culturaHinduText.setTypeface(TF2);
+
+        //Establece el tipo de letra de Adivinanzas
+        adivinanzas = (TextView) findViewById(R.id.adivinanza_text);
+        String font_path3 = "font/Keira_Normal.ttf";
+        Typeface TF3 = Typeface.createFromAsset(getAssets(), font_path3);
+        adivinanzas.setTypeface(TF3);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {

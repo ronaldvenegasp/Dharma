@@ -100,7 +100,7 @@
                 android:layout_alignEnd="@+id/numeroMesa"
                 android:background="#F79730"
                 android:textColor="#ffffff"
-                android:layout_marginStart="30sp"
+                android:layout_marginStart="40sp"
                 android:onClick="setTableNumber" />
 
             <ImageButton
