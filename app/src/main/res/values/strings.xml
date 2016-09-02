@@ -127,6 +127,6 @@
     <string name="boton_camara">botón cámara</string>
     <string name="o">ó</string>
     <string name="imagen_mesa">Imagen Mesa</string>
-    <string name="digite_numero_mesa">Digite el número \nde la mesa</string>
+    <string name="digite_numero_mesa">Escoja el número \nde la mesa</string>
     <string name="escanee_numero_mesa">Escanee el número \nde la mesa</string>
 </resources>

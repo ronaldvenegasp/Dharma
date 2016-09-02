@@ -81,17 +81,13 @@
                 android:layout_marginTop="-42sp"
                 android:layout_marginEnd="0sp" />
 
-            <EditText
+            <Spinner
                 android:layout_width="120sp"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/numeroMesa"
-                android:gravity="center"
-                android:layout_below="@+id/escanear_numero"
-                android:layout_alignParentStart="true"
-                android:layout_alignEnd="@+id/escanear_numero"
-                android:layout_marginLeft="20sp" />
+                android:id="@+id/lista_mesas"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="10sp"
+                android:textAlignment="center" />
 
             <Button
                 android:layout_width="100dp"
@@ -99,13 +95,13 @@
                 android:text="@string/Siguiente"
                 android:id="@+id/mesa_boton_siguiente"
                 android:textSize="18sp"
-                android:onClick="setTableNumber"
                 android:layout_below="@+id/numeroMesa"
                 android:layout_alignParentStart="true"
                 android:layout_alignEnd="@+id/numeroMesa"
                 android:background="#F79730"
                 android:textColor="#ffffff"
-                android:layout_marginStart="30sp" />
+                android:layout_marginStart="30sp"
+                android:onClick="setTableNumber" />
 
             <ImageButton
                 android:layout_width="wrap_content"
