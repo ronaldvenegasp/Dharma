@@ -43,7 +43,7 @@ public class NumeroMesa extends AppCompatActivity {
         }
         else{
             //Al tocar sobre el botón de Siguiente, se pasa a la actividad Menú Principal de la aplicación
-            findViewById(R.id.mesa_boton_siguiente).setOnClickListener(new View.OnClickListener() {
+            findViewById(R.id.boton_enviar).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(NumeroMesa.this, MenuPrincipal.class));

@@ -40,9 +40,80 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/menu_principal"
+        android:padding="0sp"
+        android:scaleType="center"
+        android:src="@drawable/boton_menu_principal"
+        android:contentDescription="@string/menu_principal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/imageView13"
+        android:src="@drawable/medio_pago"
+        android:layout_toStartOf="@+id/menu_principal"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/titulo"
+        android:layout_above="@+id/textView26"
+        android:layout_marginTop="-18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:id="@+id/textView26"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#FBCB73"
+        android:padding="33sp"
+        android:password="false"
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app"
+        android:contentDescription="@string/imagen_cultura_hindu"
+        android:src="@drawable/efectivo"
+        android:layout_below="@+id/imageView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signoPesos"
+        android:contentDescription="@string/imagen_retos"
+        android:src="@drawable/credito"
+        android:layout_below="@+id/imageView13"
         android:layout_alignParentStart="true"
-        android:src="@drawable/medio_pago" />
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/efectivo"
+        android:id="@+id/mejorar_text"
+        android:layout_alignEnd="@+id/app"
+        android:layout_toEndOf="@+id/boton_ayuda"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/app"
+        android:layout_alignStart="@+id/app" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credito"
+        android:id="@+id/reto_text"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_above="@+id/menu_principal"
+        android:layout_alignEnd="@+id/signoPesos"
+        android:layout_alignStart="@+id/signoPesos" />
 
 </RelativeLayout>

@@ -35,5 +35,13 @@ public class Pagar extends AppCompatActivity {
                 startActivity(new Intent(Pagar.this, Ayuda.class));
             }
         });
+
+        //Al tocar sobre el botón de Menú Principal, se pasa a la actividad menu_principal de la aplicación
+        findViewById(R.id.menu_principal).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Pagar.this, MenuPrincipal.class));
+            }
+        });
     }
 }

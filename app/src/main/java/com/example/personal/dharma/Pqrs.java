@@ -24,12 +24,6 @@ public class Pqrs extends AppCompatActivity {
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
 
-        //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
-        findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Pqrs.this, Ayuda.class));
-            }
-        });
+
     }
 }

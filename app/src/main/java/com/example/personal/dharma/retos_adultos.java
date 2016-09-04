@@ -34,7 +34,7 @@ public class retos_adultos extends AppCompatActivity {
         sopaDeLetras.setTypeface(TF1);
 
         //Establece el tipo de letra de Cultura Hindú
-        culturaHinduText = (TextView) findViewById(R.id.cultura_hindu_text);
+        culturaHinduText = (TextView) findViewById(R.id.mejorar_text);
         String font_path2 = "font/Keira_Normal.ttf";
         Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
         culturaHinduText.setTypeface(TF2);
@@ -70,7 +70,7 @@ public class retos_adultos extends AppCompatActivity {
         });
 
         //Al tocar sobre el botón de Cultura Hindú, se pasa a la actividad menu_principal de la aplicación
-        findViewById(R.id.cultura_hindu).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.app).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(retos_adultos.this, MenuPrincipal.class));

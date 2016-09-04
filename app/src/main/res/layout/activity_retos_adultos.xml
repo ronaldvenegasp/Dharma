@@ -94,7 +94,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cultura_hindu"
+        android:id="@+id/app"
         android:layout_below="@+id/imageView7"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/cultura_hindu"
@@ -117,11 +117,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/cultura_hindu"
-        android:id="@+id/cultura_hindu_text"
+        android:id="@+id/mejorar_text"
         android:textStyle="italic"
         android:textAlignment="center"
         android:layout_alignBottom="@+id/sopa_de_letras_text"
-        android:layout_alignEnd="@+id/cultura_hindu" />
+        android:layout_alignEnd="@+id/app" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
         android:id="@+id/adivinanza_text"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_alignBottom="@+id/cultura_hindu_text"
+        android:layout_alignBottom="@+id/mejorar_text"
         android:layout_alignEnd="@+id/menu_principal" />
 
 </RelativeLayout>

@@ -94,7 +94,7 @@
     <string name="BIENVENIDO">BIENVENIDO</string>
     <string name="CALIFIQUENOS">CALIFIQUENOS</string>
     <string name="AYUDA">AYUDA</string>
-    <string name="PAGAR">PAGAR</string>
+    <string name="PAGAR">PAGAR CUENTA</string>
     <string name="HACER_PEDIDO">HACER PEDIDO</string>
     <string name="boton_ayuda">boton_de_ayuda</string>
     <string name="hacer_pedido">imagen_de_hacer_pedido</string>
@@ -108,6 +108,8 @@
     <string name="boton_home">Botón para ir la menú principal</string>
     <string name="cultura_hindu">Cultura Hindú</string>
     <string name="Reto">Reto</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="credito">Tarjeta Crédito</string>
     <string name="menu_principal">¿QUÉ LE GUSTARÍA \nHACER?</string>
     <string name="mesa_no"> Mesa No. </string>
     <string name="esta_mesa">Esta en la </string>
@@ -129,4 +131,8 @@
     <string name="imagen_mesa">Imagen Mesa</string>
     <string name="digite_numero_mesa">Escoja el número \nde la mesa</string>
     <string name="escanee_numero_mesa">Escanee el número \nde la mesa</string>
+    <string name="mejorar_text">Qué podriamos mejorar</string>
+    <string name="comentario">--- Dejar un comentario ---</string>
+    <string name="calificacion">¿Cuántas estrellas nos daría?</string>
+    <string name="enviar_comentario">ENVIAR</string>
 </resources>
