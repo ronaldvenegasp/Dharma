@@ -136,4 +136,9 @@
     <string name="agradecimiento">¡MUCHAS GRACIAS!</string>
     <string name="calificacion">¿Cuántas estrellas nos daría?</string>
     <string name="enviar_comentario">ENVIAR</string>
+    <string name="pagar_cuenta">pagar_cuenta</string>
+    <string name="tiempo_espera">tiempo_espera</string>
+    <string name="hindu_calificacion">hindu_calificacion</string>
+    <string name="estrella">estrella</string>
+
 </resources>

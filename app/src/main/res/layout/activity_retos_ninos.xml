@@ -97,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cultura_hindu"
-        android:id="@+id/mejorar_text"
+        android:id="@+id/mejoras"
         android:layout_alignEnd="@+id/celular"
         android:layout_toEndOf="@+id/boton_ayuda"
         android:textStyle="italic"

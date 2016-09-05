@@ -34,7 +34,7 @@ public class retos_adultos extends AppCompatActivity {
         sopaDeLetras.setTypeface(TF1);
 
         //Establece el tipo de letra de Cultura Hindú
-        culturaHinduText = (TextView) findViewById(R.id.mejorar_text);
+        culturaHinduText = (TextView) findViewById(R.id.mejoras);
         String font_path2 = "font/Keira_Normal.ttf";
         Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
         culturaHinduText.setTypeface(TF2);

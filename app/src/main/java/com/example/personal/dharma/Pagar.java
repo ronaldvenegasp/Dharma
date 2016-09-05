@@ -6,15 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Pagar extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView textoCredito;
+    TextView textoEfectivo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +25,18 @@ public class Pagar extends AppCompatActivity {
         String font_path = "font/Humanst521_BT.ttf";
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
+
+        //Establece el tipo de letra del campo crédito
+        textoCredito = (TextView) findViewById(R.id.credito);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        textoCredito.setTypeface(TF2);
+
+        //Establece el tipo de letra del campo efectivo
+        textoEfectivo = (TextView) findViewById(R.id.mejoras);
+        String font_path3 = "font/Keira_Normal.ttf";
+        Typeface TF3 = Typeface.createFromAsset(getAssets(), font_path3);
+        textoEfectivo.setTypeface(TF3);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {

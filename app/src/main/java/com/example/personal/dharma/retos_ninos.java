@@ -27,7 +27,7 @@ public class retos_ninos extends AppCompatActivity {
         tituloPantalla.setTypeface(TF);
 
         //Establece el tipo de letra de Cultura Hindú
-        culturaHindu = (TextView) findViewById(R.id.mejorar_text);
+        culturaHindu = (TextView) findViewById(R.id.mejoras);
         String font_path1 = "font/Keira_Normal.ttf";
         Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
         culturaHindu.setTypeface(TF1);

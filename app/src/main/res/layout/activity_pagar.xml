@@ -57,6 +57,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/titulo"
         android:layout_above="@+id/textView26"
+        android:contentDescription="@string/pagar_cuenta"
         android:layout_marginTop="-18sp" />
 
     <TextView
@@ -97,19 +98,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/efectivo"
-        android:id="@+id/mejorar_text"
+        android:id="@+id/mejoras"
         android:layout_alignEnd="@+id/celular"
         android:layout_toEndOf="@+id/boton_ayuda"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_below="@+id/celular"
-        android:layout_alignStart="@+id/celular" />
+        android:layout_alignStart="@+id/celular"
+        android:layout_alignBottom="@+id/textView26" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/credito"
-        android:id="@+id/reto_text"
+        android:id="@+id/credito"
         android:textStyle="italic"
         android:textAlignment="center"
         android:layout_above="@+id/menu_principal"

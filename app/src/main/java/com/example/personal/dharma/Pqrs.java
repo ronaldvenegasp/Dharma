@@ -12,6 +12,9 @@ import android.widget.TextView;
 public class Pqrs extends AppCompatActivity {
 
     TextView tituloPantalla;
+    TextView textoEstrellas;
+    TextView textoMejoras;
+    TextView textoComentarios;
     String mensaje = "vacio";
     ImageView estrella1;
     ImageView estrella2;
@@ -23,88 +26,88 @@ public class Pqrs extends AppCompatActivity {
     ImageView celular;
 
     public void cambioEstrella1(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             estrella1.setImageResource(R.drawable.estrella);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             estrella1.setImageResource(R.drawable.estrellavacia);
             mensaje = "vacio";
         }
     }
 
     public void cambioEstrella2(View view) {
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             estrella2.setImageResource(R.drawable.estrella);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             estrella2.setImageResource(R.drawable.estrellavacia);
             mensaje = "vacio";
         }
     }
 
     public void cambioEstrella3(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             estrella3.setImageResource(R.drawable.estrella);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             estrella3.setImageResource(R.drawable.estrellavacia);
             mensaje = "vacio";
         }
     }
 
     public void cambioEstrella4(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             estrella4.setImageResource(R.drawable.estrella);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             estrella4.setImageResource(R.drawable.estrellavacia);
             mensaje = "vacio";
         }
     }
 
     public void cambioEstrella5(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             estrella5.setImageResource(R.drawable.estrella);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             estrella5.setImageResource(R.drawable.estrellavacia);
             mensaje = "vacio";
         }
     }
 
     public void cambioPesos(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             pesos.setImageResource(R.drawable.signopesos);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             pesos.setImageResource(R.drawable.signopesos2);
             mensaje = "vacio";
         }
     }
 
     public void cambioEspera(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             espera.setImageResource(R.drawable.espera);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             espera.setImageResource(R.drawable.espera2);
             mensaje = "vacio";
         }
     }
 
     public void cambioApp(View view){
-        if(mensaje == "vacio"){
+        if(mensaje.equals("vacio")){
             celular.setImageResource(R.drawable.app2);
             mensaje = "lleno";
         }
-        else if(mensaje == "lleno"){
+        else if(mensaje.equals("lleno")){
             celular.setImageResource(R.drawable.app);
             mensaje = "vacio";
         }
@@ -123,6 +126,24 @@ public class Pqrs extends AppCompatActivity {
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
 
+        //Establece el tipo de letra del campo mensaje estrellas
+        textoEstrellas = (TextView) findViewById(R.id.mensaje_estrellas);
+        String font_path2 = "font/Keira_Normal.ttf";
+        Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
+        textoEstrellas.setTypeface(TF2);
+
+        //Establece el tipo de letra del campo mejoras
+        textoMejoras = (TextView) findViewById(R.id.mejoras);
+        String font_path3 = "font/Keira_Normal.ttf";
+        Typeface TF3 = Typeface.createFromAsset(getAssets(), font_path3);
+        textoMejoras.setTypeface(TF3);
+
+        //Establece el tipo de letra del campo dejar comentario
+        textoComentarios = (TextView) findViewById(R.id.comentario);
+        String font_path4 = "font/Keira_Normal.ttf";
+        Typeface TF4 = Typeface.createFromAsset(getAssets(), font_path4);
+        textoComentarios.setTypeface(TF4);
+
         estrella1 = (ImageView) findViewById(R.id.estrella_1);
         estrella2 = (ImageView) findViewById(R.id.estrella_2);
         estrella3 = (ImageView) findViewById(R.id.estrella_3);
@@ -131,13 +152,5 @@ public class Pqrs extends AppCompatActivity {
         pesos = (ImageView) findViewById(R.id.signoPesos);
         espera = (ImageView) findViewById(R.id.espera);
         celular = (ImageView) findViewById(R.id.celular);
-
-        //Al tocar sobre el botón de Enviar, se pasa a la actividad Agradecimiento
-        findViewById(R.id.boton_enviar).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Pqrs.this, agradecimiento_calificacion.class));
-            }
-        });
     }
 }

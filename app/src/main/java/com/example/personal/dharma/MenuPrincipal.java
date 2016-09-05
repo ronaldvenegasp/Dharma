@@ -3,11 +3,13 @@ package com.example.personal.dharma;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 public class MenuPrincipal extends AppCompatActivity {
@@ -15,6 +17,11 @@ public class MenuPrincipal extends AppCompatActivity {
     TextView tituloPantalla;
     TextView numeroMesa;
     TextView numeroMesa1;
+    TextView mesaPantalla;
+
+    DataBaseManager manager;
+    Cursor cursor;
+    SimpleCursorAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +47,12 @@ public class MenuPrincipal extends AppCompatActivity {
         Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
         numeroMesa1.setTypeface(TF2);
 
-        TextView numberTable = (TextView) findViewById(R.id.numeroDeLaMesa);
-
         //Recibir el número de la mesa
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         if(extras != null){
             String datoMesa = (String) extras.get("mesa");
-            numberTable.setText(" " + datoMesa);
+            numeroMesa1.setText(" " + datoMesa);
         }
 
         //Al tocar sobre el botón de Hacer pedido, se pasa a la actividad HacerPedido de la aplicación
