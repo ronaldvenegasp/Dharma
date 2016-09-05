@@ -133,6 +133,7 @@
     <string name="escanee_numero_mesa">Escanee el número \nde la mesa</string>
     <string name="mejorar_text">Qué podriamos mejorar</string>
     <string name="comentario">--- Dejar un comentario ---</string>
+    <string name="agradecimiento">¡MUCHAS GRACIAS!</string>
     <string name="calificacion">¿Cuántas estrellas nos daría?</string>
     <string name="enviar_comentario">ENVIAR</string>
 </resources>

@@ -48,18 +48,19 @@
         android:textStyle="italic"
         android:textAlignment="center"
         android:layout_alignTop="@+id/textView26"
-        android:layout_alignEnd="@+id/app"
+        android:layout_alignEnd="@+id/celular"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/app"
+        android:id="@+id/celular"
         android:contentDescription="@string/imagen_cultura_hindu"
         android:src="@drawable/app"
         android:layout_alignBottom="@+id/textView26"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="35sp" />
+        android:layout_marginRight="35sp"
+        android:onClick="cambioApp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -69,7 +70,8 @@
         android:src="@drawable/signopesos"
         android:layout_alignBottom="@+id/textView26"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="35sp" />
+        android:layout_marginLeft="35sp"
+        android:onClick="cambioPesos" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -77,7 +79,8 @@
         android:id="@+id/espera"
         android:src="@drawable/espera"
         android:layout_below="@+id/mejorar_text"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="cambioEspera" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -101,7 +104,7 @@
         android:background="#F79730"
         android:textColor="#ffffff"
         android:layout_alignTop="@+id/comentario"
-        android:layout_alignStart="@+id/app"
+        android:layout_alignStart="@+id/celular"
         android:layout_alignBottom="@+id/comentario"
         android:layout_marginRight="5sp" />
 
@@ -118,14 +121,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calificacion"
         android:id="@+id/mensaje_estrellas"
         android:textAlignment="center"
         android:textSize="15sp"
         android:layout_above="@+id/estrella_1"
         android:layout_alignStart="@+id/estrella_1"
         android:layout_marginBottom="27dp"
-        android:layout_alignEnd="@+id/estrella_3" />
+        android:layout_alignEnd="@+id/estrella_3"
+        android:text="@string/calificacion" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -133,7 +136,9 @@
         android:id="@+id/estrella_1"
         android:src="@drawable/estrellavacia"
         android:layout_alignTop="@+id/estrella_2"
-        android:layout_alignStart="@+id/comentario" />
+        android:layout_alignStart="@+id/comentario"
+        android:nestedScrollingEnabled="false"
+        android:onClick="cambioEstrella1" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -141,7 +146,8 @@
         android:id="@+id/estrella_2"
         android:src="@drawable/estrellavacia"
         android:layout_alignTop="@+id/estrella_3"
-        android:layout_toEndOf="@+id/signoPesos" />
+        android:layout_toEndOf="@+id/signoPesos"
+        android:onClick="cambioEstrella2" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -150,7 +156,8 @@
         android:src="@drawable/estrellavacia"
         android:layout_marginTop="92dp"
         android:layout_alignTop="@+id/hindu"
-        android:layout_alignEnd="@+id/espera" />
+        android:layout_alignEnd="@+id/espera"
+        android:onClick="cambioEstrella3" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -158,7 +165,8 @@
         android:id="@+id/estrella_4"
         android:src="@drawable/estrellavacia"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/estrella_1" />
+        android:layout_toEndOf="@+id/estrella_1"
+        android:onClick="cambioEstrella4" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -166,7 +174,8 @@
         android:id="@+id/estrella_5"
         android:src="@drawable/estrellavacia"
         android:layout_alignTop="@+id/estrella_4"
-        android:layout_toEndOf="@+id/estrella_2" />
+        android:layout_toEndOf="@+id/estrella_2"
+        android:onClick="cambioEstrella5" />
 
 
 </RelativeLayout>

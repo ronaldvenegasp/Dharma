@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context="com.example.personal.dharma.MainActivity"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agradecimiento"
+        android:textAlignment="center"
+        android:textSize="@dimen/titles_size_standard"
+        android:id="@+id/titulo"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#F79730"
+        android:padding="25sp"
+        android:elevation="10dp"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

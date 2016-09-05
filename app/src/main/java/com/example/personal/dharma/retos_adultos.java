@@ -70,7 +70,7 @@ public class retos_adultos extends AppCompatActivity {
         });
 
         //Al tocar sobre el botón de Cultura Hindú, se pasa a la actividad menu_principal de la aplicación
-        findViewById(R.id.app).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.celular).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(retos_adultos.this, MenuPrincipal.class));

@@ -75,7 +75,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/app"
+        android:id="@+id/celular"
         android:contentDescription="@string/imagen_cultura_hindu"
         android:src="@drawable/efectivo"
         android:layout_below="@+id/imageView13"
@@ -98,12 +98,12 @@
         android:layout_height="wrap_content"
         android:text="@string/efectivo"
         android:id="@+id/mejorar_text"
-        android:layout_alignEnd="@+id/app"
+        android:layout_alignEnd="@+id/celular"
         android:layout_toEndOf="@+id/boton_ayuda"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_below="@+id/app"
-        android:layout_alignStart="@+id/app" />
+        android:layout_below="@+id/celular"
+        android:layout_alignStart="@+id/celular" />
 
     <TextView
         android:layout_width="wrap_content"

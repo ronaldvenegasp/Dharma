@@ -40,7 +40,8 @@
         <activity android:name=".Pqrs" />
         <activity android:name=".retos_ninos" />
         <activity android:name=".retos_adultos" />
-        <activity android:name=".inicio"></activity>
+        <activity android:name=".inicio" />
+        <activity android:name=".agradecimiento_calificacion"></activity>
     </application>
 
 </manifest>
