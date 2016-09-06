@@ -76,7 +76,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/celular"
+        android:id="@+id/escanear"
         android:layout_alignTop="@+id/textView26"
         android:layout_alignParentStart="true"
         android:contentDescription="@string/imagen_cultura_hindu"
@@ -86,7 +86,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signoPesos"
+        android:id="@+id/formulario"
         android:contentDescription="@string/imagen_retos"
         android:layout_alignTop="@+id/textView26"
         android:layout_alignEnd="@+id/imageView6"
@@ -97,12 +97,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cultura_hindu"
-        android:id="@+id/mejoras"
-        android:layout_alignEnd="@+id/celular"
+        android:id="@+id/escanear_text"
+        android:layout_alignEnd="@+id/escanear"
         android:layout_toEndOf="@+id/boton_ayuda"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_below="@+id/celular" />
+        android:layout_below="@+id/escanear" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
         android:id="@+id/reto_text"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_below="@+id/signoPesos"
-        android:layout_alignStart="@+id/signoPesos"
-        android:layout_alignEnd="@+id/signoPesos" />
+        android:layout_below="@+id/formulario"
+        android:layout_alignStart="@+id/formulario"
+        android:layout_alignEnd="@+id/formulario" />
 </RelativeLayout>

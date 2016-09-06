@@ -7,13 +7,13 @@
     android:paddingLeft="0sp"
     android:paddingRight="0sp"
     android:paddingTop="0sp"
-    tools:context="com.example.personal.dharma.retos_adultos"
+    tools:context="com.example.personal.dharma.Pagar"
     android:background="@drawable/fondo">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/RETOS_ADULTOS"
+        android:text="@string/PAGAR_CREDITO"
         android:textAlignment="center"
         android:textSize="@dimen/titles_size_standard"
         android:id="@+id/titulo"
@@ -32,8 +32,8 @@
         android:id="@+id/boton_ayuda"
         android:padding="0sp"
         android:scaleType="center"
-        android:src="@drawable/boton_ayuda"
         android:contentDescription="@string/boton_ayuda"
+        android:src="@drawable/boton_ayuda"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
@@ -49,89 +49,82 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView13"
+        android:src="@drawable/mensaje_mesa"
+        android:layout_toStartOf="@+id/menu_principal"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/titulo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-25sp"
-        android:contentDescription="@string/menu_principal"
-        android:src="@drawable/pantalla_retos_adultos"
-        android:layout_above="@+id/textView29" />
+        android:layout_above="@+id/textView26"
+        android:contentDescription="@string/pagar_cuenta"
+        android:layout_marginTop="-18sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="40sp"
-        android:id="@+id/textView29"
+        android:id="@+id/textView26"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="#FBCB73"
         android:padding="33sp"
         android:password="false"
-        android:layout_above="@+id/menu_principal"
-        android:layout_alignEnd="@+id/menu_principal" />
+        android:layout_above="@+id/boton_ayuda"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sopa_letras"
-        android:layout_below="@+id/imageView7"
+        android:id="@+id/formulario"
+        android:contentDescription="@string/datafono"
+        android:src="@drawable/registro_tarjeta_credito"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/sopa_letras"
-        android:src="@drawable/sopa_de_letras" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/adivinanzas"
-        android:src="@drawable/adivinanzas"
-        android:layout_below="@+id/imageView7"
-        android:contentDescription="@string/Adivinanzas"
-        android:layout_alignEnd="@+id/imageView7" />
+        android:layout_marginLeft="40sp"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="5sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/escanear"
-        android:layout_below="@+id/imageView7"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/cultura_hindu"
-        android:src="@drawable/taj_mahal" />
-
+        android:contentDescription="@string/imagen_cultura_hindu"
+        android:src="@drawable/camara_tarjeta_credito"
+        android:layout_marginRight="45sp"
+        android:layout_alignEnd="@+id/menu_principal"
+        android:layout_marginEnd="33dp"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginTop="30sp"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_marginBottom="5sp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/sopa_letras"
-        android:id="@+id/sopa_de_letras_text"
-        android:textStyle="italic"
-        android:textAlignment="center"
-        android:layout_below="@+id/sopa_letras"
-        android:layout_alignEnd="@+id/sopa_letras"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/cultura_hindu"
+        android:text="@string/Escanear_tarjeta"
         android:id="@+id/escanear_text"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_alignBottom="@+id/sopa_de_letras_text"
-        android:layout_alignEnd="@+id/escanear" />
+        android:layout_below="@+id/imageView13"
+        android:layout_alignStart="@+id/escanear"
+        android:layout_marginTop="10sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/Adivinanzas"
-        android:id="@+id/adivinanza_text"
+        android:text="@string/Registrar_tarjeta"
+        android:id="@+id/registrar_text"
         android:textStyle="italic"
         android:textAlignment="center"
-        android:layout_alignBottom="@+id/escanear_text"
-        android:layout_alignEnd="@+id/menu_principal" />
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignEnd="@+id/formulario"
+        android:layout_marginTop="10sp" />
+
+
+
+
+
 
 </RelativeLayout>

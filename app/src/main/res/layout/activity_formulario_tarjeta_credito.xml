@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context="com.example.personal.dharma.Pagar"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/REGISTRO_TARJETA"
+        android:textAlignment="center"
+        android:textSize="@dimen/titles_size_standard"
+        android:id="@+id/titulo"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#F79730"
+        android:padding="25sp"
+        android:elevation="10dp"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_ayuda"
+        android:padding="0sp"
+        android:scaleType="center"
+        android:contentDescription="@string/boton_ayuda"
+        android:src="@drawable/boton_ayuda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal"
+        android:padding="0sp"
+        android:scaleType="center"
+        android:src="@drawable/boton_menu_principal"
+        android:contentDescription="@string/menu_principal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView13"
+        android:src="@drawable/formulario_tarjeta_credito"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/titulo"
+        android:contentDescription="@string/pagar_cuenta"
+        android:layout_above="@+id/boton_hacer_pago"
+        android:layout_marginLeft="200sp" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hacer_pago"
+        android:id="@+id/boton_hacer_pago"
+        android:textSize="18sp"
+        android:background="#F79730"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5sp"
+        android:onClick="validarFormulario" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numero_tarjeta"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:hint="@string/pista_numero_tarjeta"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10sp" />
+
+    <EditText
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/mes_tarjeta"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:hint="@string/mm"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10sp" />
+
+
+    <EditText
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/anio_tarjeta"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:hint="@string/aa"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="77sp" />
+
+    <EditText
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cvv"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:hint="@string/cvv"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="143sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Registrar_tarjeta"
+        android:id="@+id/imageView14"
+        android:layout_below="@+id/mes_tarjeta"
+        android:layout_toStartOf="@+id/boton_hacer_pago"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/cvv"
+        android:layout_marginLeft="15sp"
+        android:layout_alignEnd="@+id/cvv" />
+
+
+</RelativeLayout>

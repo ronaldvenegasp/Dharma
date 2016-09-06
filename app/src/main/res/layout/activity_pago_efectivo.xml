@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/PAGAR"
+        android:text="@string/PAGAR_EFECTIVO"
         android:textAlignment="center"
         android:textSize="@dimen/titles_size_standard"
         android:id="@+id/titulo"
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView13"
-        android:src="@drawable/medio_pago"
+        android:src="@drawable/pago_efectivo"
         android:layout_toStartOf="@+id/menu_principal"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/titulo"
@@ -77,45 +77,71 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/escanear"
-        android:contentDescription="@string/imagen_cultura_hindu"
-        android:src="@drawable/efectivo"
+        android:id="@+id/formulario"
+        android:contentDescription="@string/datafono"
+        android:src="@drawable/datafono"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40sp"
+        android:layout_alignBottom="@+id/textView26"
         android:layout_below="@+id/imageView13"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="50sp" />
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="5sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/formulario"
-        android:contentDescription="@string/imagen_retos"
-        android:src="@drawable/credito"
+        android:id="@+id/escanear"
+        android:contentDescription="@string/imagen_cultura_hindu"
+        android:src="@drawable/pagar_efectivo"
+        android:layout_marginRight="45sp"
+        android:layout_alignEnd="@+id/menu_principal"
+        android:layout_marginEnd="33dp"
         android:layout_below="@+id/imageView13"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15sp"
-        android:layout_marginLeft="50sp" />
+        android:layout_marginTop="30sp"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_marginBottom="5sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="@string/efectivo"
-        android:id="@+id/escanear_text"
-        android:layout_alignEnd="@+id/escanear"
-        android:layout_toEndOf="@+id/boton_ayuda"
-        android:textStyle="italic"
-        android:textAlignment="center"
-        android:layout_alignStart="@+id/escanear"
-        android:layout_alignBottom="@+id/textView26" />
+        android:text="@string/Llamar_a_Zamir"
+        android:id="@+id/boton_llamar"
+        android:textSize="18sp"
+        android:background="#F79730"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/credito"
-        android:id="@+id/credito"
-        android:textStyle="italic"
-        android:textAlignment="center"
-        android:layout_above="@+id/menu_principal"
-        android:layout_alignEnd="@+id/formulario"
-        android:layout_alignStart="@+id/formulario" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginBottom="140sp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/billetera"
+            android:id="@+id/opcion_datafono"
+            android:layout_alignTop="@+id/textView26"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30sp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pago_efectivo"
+            android:id="@+id/opcion_efectivo"
+            android:layout_below="@+id/imageView13"
+            android:layout_alignEnd="@+id/menu_principal"
+            android:checked="false"
+            android:layout_marginLeft="55sp" />
+    </RadioGroup>
+
+
+
 
 </RelativeLayout>

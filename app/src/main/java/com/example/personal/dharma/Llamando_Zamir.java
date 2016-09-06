@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class agradecimiento_calificacion extends AppCompatActivity {
+public class Llamando_Zamir extends AppCompatActivity {
 
     TextView tituloPantalla;
 
@@ -17,7 +17,7 @@ public class agradecimiento_calificacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agradecimiento_calificacion);
+        setContentView(R.layout.activity_llamando__zamir);
 
         //Establece el tipo de letra del título de la pantalla
         tituloPantalla = (TextView) findViewById(R.id.titulo);
@@ -28,10 +28,10 @@ public class agradecimiento_calificacion extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             public void run(){
                 // Cuando pasen los 3 segundos, pasamos a la actividad principal de la aplicación
-                Intent intent = new Intent(agradecimiento_calificacion.this, MenuPrincipal.class);
+                Intent intent = new Intent(Llamando_Zamir.this, MenuPrincipal.class);
                 startActivity(intent);
                 finish();
-            }
+            };
         }, DURACION_SPLASH);
     }
 }

@@ -3,7 +3,7 @@
     package="com.example.personal.dharma">
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="19"
         android:targetSdkVersion="23" />
 
     <supports-screens
@@ -41,7 +41,12 @@
         <activity android:name=".retos_ninos" />
         <activity android:name=".retos_adultos" />
         <activity android:name=".inicio" />
-        <activity android:name=".agradecimiento_calificacion"></activity>
+        <activity android:name=".agradecimiento_calificacion" />
+        <activity android:name=".PagoEfectivo" />
+        <activity android:name=".PagoCredito" />
+        <activity android:name=".Llamando_Zamir" />
+        <activity android:name=".formulario_tarjeta_credito" />
+        <activity android:name=".finalizar_pago_tarjeta_credito"></activity>
     </application>
 
 </manifest>

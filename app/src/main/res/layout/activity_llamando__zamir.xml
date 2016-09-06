@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/agradecimiento"
+        android:text="@string/Llamando_Zamir"
         android:textAlignment="center"
         android:textSize="@dimen/titles_size_standard"
         android:id="@+id/titulo"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView13"
-        android:src="@drawable/agradecimiento"
+        android:src="@drawable/recibir_pago"
         android:layout_toStartOf="@+id/menu_principal"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/titulo"

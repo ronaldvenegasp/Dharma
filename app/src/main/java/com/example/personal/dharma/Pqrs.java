@@ -1,6 +1,5 @@
 package com.example.personal.dharma;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -133,7 +132,7 @@ public class Pqrs extends AppCompatActivity {
         textoEstrellas.setTypeface(TF2);
 
         //Establece el tipo de letra del campo mejoras
-        textoMejoras = (TextView) findViewById(R.id.mejoras);
+        textoMejoras = (TextView) findViewById(R.id.escanear_text);
         String font_path3 = "font/Keira_Normal.ttf";
         Typeface TF3 = Typeface.createFromAsset(getAssets(), font_path3);
         textoMejoras.setTypeface(TF3);
@@ -149,8 +148,8 @@ public class Pqrs extends AppCompatActivity {
         estrella3 = (ImageView) findViewById(R.id.estrella_3);
         estrella4 = (ImageView) findViewById(R.id.estrella_4);
         estrella5 = (ImageView) findViewById(R.id.estrella_5);
-        pesos = (ImageView) findViewById(R.id.signoPesos);
+        pesos = (ImageView) findViewById(R.id.formulario);
         espera = (ImageView) findViewById(R.id.espera);
-        celular = (ImageView) findViewById(R.id.celular);
+        celular = (ImageView) findViewById(R.id.escanear);
     }
 }

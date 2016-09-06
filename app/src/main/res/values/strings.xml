@@ -95,6 +95,8 @@
     <string name="CALIFIQUENOS">CALIFIQUENOS</string>
     <string name="AYUDA">AYUDA</string>
     <string name="PAGAR">PAGAR CUENTA</string>
+    <string name="PAGAR_EFECTIVO">PAGO EN EFECTIVO</string>
+    <string name="PAGAR_CREDITO">TARJETA DE CRÉDITO</string>
     <string name="HACER_PEDIDO">HACER PEDIDO</string>
     <string name="boton_ayuda">boton_de_ayuda</string>
     <string name="hacer_pedido">imagen_de_hacer_pedido</string>
@@ -140,5 +142,20 @@
     <string name="tiempo_espera">tiempo_espera</string>
     <string name="hindu_calificacion">hindu_calificacion</string>
     <string name="estrella">estrella</string>
+    <string name="Llamar_a_Zamir">Llamar a Zamir</string>
+    <string name="datafono">datafono</string>
+    <string name="billetera">Billetera Móvil</string>
+    <string name="pago_efectivo">Pago en efectivo</string>
+    <string name="Llamando_Zamir">Llamando a Zamir</string>
+    <string name="Registrar_tarjeta">Registrar Tarjeta</string>
+    <string name="Escanear_tarjeta">Escanear Tarjeta</string>
+    <string name="REGISTRO_TARJETA">REGISTRAR TARJETA</string>
+    <string name="hacer_pago">HACER PAGO</string>
+    <string name="Finalizar_pago_TC">Pago Finalizado</string>
+    <string name="pista_numero_tarjeta">Número tarjeta de crédito</string>
+    <string name="mm">MM</string>
+    <string name="aa">AA</string>
+    <string name="cvv">CVV</string>
+
 
 </resources>

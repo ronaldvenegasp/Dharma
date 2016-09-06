@@ -27,7 +27,7 @@ public class retos_ninos extends AppCompatActivity {
         tituloPantalla.setTypeface(TF);
 
         //Establece el tipo de letra de Cultura Hindú
-        culturaHindu = (TextView) findViewById(R.id.mejoras);
+        culturaHindu = (TextView) findViewById(R.id.escanear_text);
         String font_path1 = "font/Keira_Normal.ttf";
         Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
         culturaHindu.setTypeface(TF1);
@@ -55,7 +55,7 @@ public class retos_ninos extends AppCompatActivity {
         });
 
         //Al tocar sobre el botón de Cultura Hindú, se pasa a la actividad menu_principal de la aplicación
-        findViewById(R.id.celular).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.escanear).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(retos_ninos.this, MenuPrincipal.class));
@@ -63,7 +63,7 @@ public class retos_ninos extends AppCompatActivity {
         });
 
         //Al tocar sobre el botón de Reto, se pasa a la actividad menu_principal de la aplicación
-        findViewById(R.id.signoPesos).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.formulario).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(retos_ninos.this, MenuPrincipal.class));

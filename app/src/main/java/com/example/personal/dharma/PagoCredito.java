@@ -5,20 +5,19 @@ import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class Pagar extends AppCompatActivity {
+public class PagoCredito extends AppCompatActivity {
 
     TextView tituloPantalla;
-    TextView textoCredito;
-    TextView textoEfectivo;
+    TextView registrar;
+    TextView escanear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_pagar);
+        setContentView(R.layout.activity_pago_credito);
 
         //Establece el tipo de letra del título de la pantalla
         tituloPantalla = (TextView) findViewById(R.id.titulo);
@@ -26,23 +25,23 @@ public class Pagar extends AppCompatActivity {
         Typeface TF = Typeface.createFromAsset(getAssets(), font_path);
         tituloPantalla.setTypeface(TF);
 
-        //Establece el tipo de letra del campo crédito
-        textoCredito = (TextView) findViewById(R.id.credito);
+        //Establece el tipo de letra de Registrar Tarjeta
+        registrar = (TextView) findViewById(R.id.registrar_text);
+        String font_path1 = "font/Keira_Normal.ttf";
+        Typeface TF1 = Typeface.createFromAsset(getAssets(), font_path1);
+        registrar.setTypeface(TF1);
+
+        //Establece el tipo de letra de Escanear Tarjeta
+        escanear = (TextView) findViewById(R.id.escanear_text);
         String font_path2 = "font/Keira_Normal.ttf";
         Typeface TF2 = Typeface.createFromAsset(getAssets(), font_path2);
-        textoCredito.setTypeface(TF2);
-
-        //Establece el tipo de letra del campo efectivo
-        textoEfectivo = (TextView) findViewById(R.id.escanear_text);
-        String font_path3 = "font/Keira_Normal.ttf";
-        Typeface TF3 = Typeface.createFromAsset(getAssets(), font_path3);
-        textoEfectivo.setTypeface(TF3);
+        escanear.setTypeface(TF2);
 
         //Al tocar sobre el botón de Ayuda, se pasa a la actividad Ayuda de la aplicación
         findViewById(R.id.boton_ayuda).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Pagar.this, Ayuda.class));
+                startActivity(new Intent(PagoCredito.this, Ayuda.class));
             }
         });
 
@@ -50,23 +49,15 @@ public class Pagar extends AppCompatActivity {
         findViewById(R.id.menu_principal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Pagar.this, MenuPrincipal.class));
+                startActivity(new Intent(PagoCredito.this, MenuPrincipal.class));
             }
         });
 
-        //Al tocar sobre el botón Tarjeta de Crédito, se pasa a la actividad PagoCredito de la aplicación
+        //Al tocar sobre el botón de Formulario, se pasa a la actividad formulario tarjeta crédito de la aplicación
         findViewById(R.id.formulario).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Pagar.this, PagoCredito.class));
-            }
-        });
-
-        //Al tocar sobre el botón Efectivo, se pasa a la actividad PagoEfectivo de la aplicación
-        findViewById(R.id.escanear).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Pagar.this, PagoEfectivo.class));
+                startActivity(new Intent(PagoCredito.this, formulario_tarjeta_credito.class));
             }
         });
     }
