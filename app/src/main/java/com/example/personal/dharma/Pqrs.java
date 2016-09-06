@@ -1,5 +1,6 @@
 package com.example.personal.dharma;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -151,5 +152,13 @@ public class Pqrs extends AppCompatActivity {
         pesos = (ImageView) findViewById(R.id.formulario);
         espera = (ImageView) findViewById(R.id.espera);
         celular = (ImageView) findViewById(R.id.escanear);
+
+        //Al tocar sobre el botón de enviar, se pasa a la actividad agradecimiento de la aplicación
+        findViewById(R.id.boton_enviar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Pqrs.this, agradecimiento_calificacion.class));
+            }
+        });
     }
 }
